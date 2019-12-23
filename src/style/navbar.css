@@ -1,14 +1,14 @@
-
-header{
+.page-header{
   z-index: 1000;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
-  box-shadow: rgba(146, 157, 154, 0.3) 0px 4px 10px 0px;
   background: white;
+  box-shadow: rgba(146, 157, 154, 0.3) 0px 4px 10px 0px;
 }
 
+.page-header
 .navbar {
   display: flex;
   flex-direction: row;
@@ -23,31 +23,76 @@ header{
   flex: initial;
   margin: 0px auto
 }
-.el-menu-demo{
+
+.page-header
+.navbar-menu{
   margin-right: auto;
 }
+
+
+.page-header
+.navbar
+.logo{
+  display: inherit;
+  height: 68px;
+  width: 140px;
+}
+.page-header
+.navbar
+.logo >img{
+  width: 48px;
+}
+
+.page-header
+.navbar
+.download-login{
+  display: none;
+}
+
+.page-header
+.navbar
+.navbar-from{
+  font-size: 14px;
+  color: #4D555D !important;
+}
+
+.page-header
+.navbar
+.navbar-from > span{
+  cursor: pointer;
+}
+.page-header
+.navbar
+.navbar-from > span:hover{
+  color:#409EFF;
+}
+
+/*导航条样式*/
 .el-menu--horizontal>.el-menu-item,.el-menu--horizontal>.el-submenu .el-submenu__title{
   height: 69px;
   line-height: 69px;
   font-size:14px;
   color: #4D555D !important;
+  font-weight: 500;
 }
-
-.navbar .logo{
-  width: 48px;
-}
-.navbar .download-login{
-  display: none;
+.el-divider--vertical{
+  margin: 0;
 }
 
 /* 小屏幕下应用的样式 */
 @media only screen and (max-width:960px) {
-  header{
+  .page-header{
     box-shadow: none;
   }
+  .page-header
   .navbar{
-    height: 48px;
+    background: #409EFF;
     box-shadow: none;
+    height: 48px;
+  }
+  .page-header
+  .navbar-menu{
+    display: none;
   }
   .navbar .download-login{
     display: block;
@@ -63,3 +108,11 @@ header{
     display: none;
   }
 }
+
+@media only screen and (max-width:1200px) and (min-width:960px) {
+  .page-header
+  .navbar{
+    width: 940px;
+  }
+}
+
