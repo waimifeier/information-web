@@ -1,4 +1,3 @@
-
 html,
 body {
   height: 100%;
@@ -14,6 +13,36 @@ body {
   overflow-x: hidden;
 }
 
-.app-container{
-  height: 100%;
+.container{
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+@media only screen and (max-width: 768px){
+  .container{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px){
+  .container{
+    width: 750px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .container{
+    width: 970px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .container{
+    width: 1170px;
+  }
+}
+
+
+
